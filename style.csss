@@ -1,0 +1,10 @@
+body{
+text-align: center
+}
+#cover {
+  height: 400px;
+  padding: 2px;
+}
+p {
+font-size: 60px
+}

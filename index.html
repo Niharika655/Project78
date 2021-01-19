@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>My Family</title> </head>
+  <link rel="stylesheet" href="style.csss">
+  <body>
+    
+    <p id="title"> My Family Book </p>
+    
+<p> <img id="cover" src="Family book.jfif">
+  <div> 
+    <h3 id="name">My Family Book</h3>
+    <button type="button" onclick="nextpic()"> Move </button>
+    </div> 
+    
+    <script>
+var book=["https://easydrawingguides.com/wp-content/uploads/2017/02/How-to-draw-a-cartoon-girl-20.png", "https://webstockreview.net/images/clipart-mom-cartoon-3.jpg","https://cdn1.vectorstock.com/i/thumb-large/76/80/cartoon-dad-vector-10157680.jpg", "https://i.pinimg.com/originals/d8/ac/a9/d8aca934c60c7f9392f8828e50b03f4b.jpg", "https://t3.ftcdn.net/jpg/02/62/72/10/360_F_262721041_9mNNRQadoz552DN2NTFNbGBHN14K9D58.jpg", "https://cdn2.iconfinder.com/data/icons/characters-one/60/asian_family-512.png","https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg"];
+var names=["Niharika Khedekar", "Sandhya Khedekar", "Milind Khedekar", "Mrunalini Khedekar", "Manohar Khedekar","Our Happy Family","My Family Book"]
+var i=0;
+
+function nextpic() {
+  if(i==7) {
+  i=0;
+  }
+  document.getElementById("cover").src=book[i];
+  document.getElementById("name").textContent=names[i];
+i++;
+}
+
+    </script>
+  </body>
+</html>
